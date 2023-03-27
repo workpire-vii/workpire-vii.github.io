@@ -218,118 +218,136 @@
         <script>
             gsap.registerPlugin(ScrollTrigger);
             
-            gsap.from(".image", 
-            {
-                scrollTrigger: ".image",
-                x:1200,
-                ease: "power4.inOut",
-                duration: 3,
-            }
-            );
-            
-            gsap.from(".image2", 
-            {
-                scrollTrigger: ".image2",
-                x:1200,
-                ease: "power4.inOut",
-                duration: 3,
-            }
-            );
-            
-            gsap.from(".image3", 
-            {
-                scrollTrigger: ".image3",
-                x:1200,
-                ease: "power4.inOut",
-                duration: 3,
-            }
-            );
-            
-            gsap.from(".image4", 
-            {
-                scrollTrigger: ".image4",
-                x:1200,
-                ease: "power4.inOut",
-                duration: 3,
-            }
-            );
-            
-            gsap.to(".stars4", {
-                scrollTrigger: ".image",
-                duration: 1,
-                text:  "★★★",
-                delay: 0.5,
-            }
-            );
-            
-            gsap.to(".stars1", {
-                scrollTrigger: ".image",
-                duration: 1,
-                text:  "★★★★",
-                delay: 0.5,
-            }
-            );
-            
-            gsap.to(".stars2", {
-                scrollTrigger: ".image2",
+            // wait until DOM is ready
+            document.addEventListener("DOMContentLoaded", function(event) {
                 
-                duration: 1,
-                text:  "★★★★★",
-                delay: 0.5,
-            }
-            );
-            
-            
-            gsap.to(".stars3", {
-                scrollTrigger: ".image3",
+                // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
+                // you could also use addEventListener() instead
+                window.onload = function() {
+                    
+                    // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
+                    window.requestAnimationFrame(function() {
+                        
+                        // GSAP custom code goes here     
+                        gsap.from(".image", 
+                        {
+                            scrollTrigger: ".image",
+                            x:1200,
+                            ease: "power4.inOut",
+                            duration: 3,
+                        }
+                        );
+                        
+                        gsap.from(".image2", 
+                        {
+                            scrollTrigger: ".image2",
+                            x:1200,
+                            ease: "power4.inOut",
+                            duration: 3,
+                        }
+                        );
+                        
+                        gsap.from(".image3", 
+                        {
+                            scrollTrigger: ".image3",
+                            x:1200,
+                            ease: "power4.inOut",
+                            duration: 3,
+                        }
+                        );
+                        
+                        gsap.from(".image4", 
+                        {
+                            scrollTrigger: ".image4",
+                            x:1200,
+                            ease: "power4.inOut",
+                            duration: 3,
+                        }
+                        );
+                        
+                        gsap.to(".stars4", {
+                            scrollTrigger: ".image",
+                            duration: 1,
+                            text:  "★★★",
+                            delay: 0.5,
+                        }
+                        );
+                        
+                        gsap.to(".stars1", {
+                            scrollTrigger: ".image",
+                            duration: 1,
+                            text:  "★★★★",
+                            delay: 0.5,
+                        }
+                        );
+                        
+                        gsap.to(".stars2", {
+                            scrollTrigger: ".image2",
+                            
+                            duration: 1,
+                            text:  "★★★★★",
+                            delay: 0.5,
+                        }
+                        );
+                        
+                        
+                        gsap.to(".stars3", {
+                            scrollTrigger: ".image3",
+                            
+                            duration: 1,
+                            text:  "★★★★★★",
+                            delay: 0.5,
+                        }
+                        );
+                        
+                        gsap.to(".starsSpecial", {
+                            duration: 0.5,
+                            color:'#FFFFFF',
+                            repeat:'-1',
+                            yoyo:true,
+                        }
+                        );
+                        
+                        gsap.from(".halfright", 
+                        {
+                            scrollTrigger: ".halfright",
+                            x:1200,
+                            ease: "power4.inOut",
+                            duration: 1,
+                            delay: 2,
+                        }
+                        );
+                        
+                        
+                        
+                        gsap.from(".halfright2", 
+                        {
+                            scrollTrigger: ".halfright2",
+                            x:1200,
+                            ease: "power4.inOut",
+                            duration: 1,
+                            delay: 2,
+                        }
+                        );
+                        
+                        
+                        
+                        gsap.from(".halfright3", 
+                        {
+                            scrollTrigger: ".halfright3",
+                            x:1200,
+                            ease: "power4.inOut",
+                            duration: 1,
+                            delay: 1,
+                        }
+                        );
+                    });
+                    
+                };
                 
-                duration: 1,
-                text:  "★★★★★★",
-                delay: 0.5,
-            }
-            );
-            
-            gsap.to(".starsSpecial", {
-                duration: 0.5,
-                color:'#FFFFFF',
-                repeat:'-1',
-                yoyo:true,
-            }
-            );
-            
-            gsap.from(".halfright", 
-            {
-                scrollTrigger: ".halfright",
-                x:1200,
-                ease: "power4.inOut",
-                duration: 1,
-                delay: 2,
-            }
-            );
+            });
             
             
-            
-            gsap.from(".halfright2", 
-            {
-                scrollTrigger: ".halfright2",
-                x:1200,
-                ease: "power4.inOut",
-                duration: 1,
-                delay: 2,
-            }
-            );
-            
-            
-            
-            gsap.from(".halfright3", 
-            {
-                scrollTrigger: ".halfright3",
-                x:1200,
-                ease: "power4.inOut",
-                duration: 1,
-                delay: 1,
-            }
-            );
             
             
         </script>
