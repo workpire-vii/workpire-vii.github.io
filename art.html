@@ -104,7 +104,9 @@
                 
                 
                 <div class="flex flex-col w-full text-xl">
-                    <div class="md:h-[10rem] xl:h-[20rem]"></div>
+                    
+                    
+                    
                     
                     <div class="flex-1 my-2 z-10 relative">
                         <div class="text-8xl font-bold relative flex-1 text-blue-500/80 text-left">SIMPLE
@@ -138,7 +140,7 @@
                         <div  class="group"><img src="/img/Blacklight-V-IIIcr.png" alt="" class="image2 group-hover:bg-gradient-to-b from-transparent via-transparent to-yellow-500/40 absolute -top-24 -z-10 visible"></div>                   
                     </div>
                     
-                    <div class="h-[27rem] lg:h-[32rem] xl:h-[27rem]"></div>
+                    <div class="h-[27rem] lg:h-[32rem] xl:h-[28rem]"></div>
                     
                     <div class="flex-1 my-2 z-10 relative">
                         <div class="text-8xl font-bold relative flex-1 text-purple-500/80 text-left">ELITE </div>
@@ -162,8 +164,48 @@
                         </div>
                     </div>
                     
-                    <div class="h-[40rem]"></div>
+                    <div class="h-[28rem] lg:h-[33rem] xl:h-[28rem]"></div>
                     
+                    <div class="flex-1 my-2 z-10 relative">
+                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-pink-400/80 text-right">CREATURAS
+                            <div class="absolute right-0 -top-12 sm:text-8xl text-5xl text-white/70 stars4 -z-10"></div>
+                            
+                        </div>
+                        
+                        
+                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[7.5rem] md:top-[12rem] lg:top-[18rem] xl:top-[8rem]">
+                            A chibi, essentially. A small creature. An organism. A lil' guy.
+                            <div class="font-bold text-4xl md:text-5xl text-pink-300 halfright4  w-[22rem]">CREATURA  $10</div>
+                        </div>
+                        <div class="group">
+                            <img src="/img/creaturas2.png" alt="" class="image4 absolute hidden group-hover:block -top-24 z-10 visible">
+                            <img src="/img/creaturas.png" alt="" class="image4 absolute -top-24 -z-10 visible">
+                        </div>
+                    </div>
+                    
+                    <div class="h-[35rem]"></div>
+                    
+                    
+                    
+                    <a href="commission.html">
+                        <button>
+                            <div class="group m-auto w-max px-8 bg-yellow-400 h-24 rounded-md text-black text-6xl text-center hover:bg-yellow-300">
+                                <div class="pt-[1rem] align-middle">
+                                    <div class="inline group-hover:tracking-[-0.25em]">
+                                        ˃˃
+                                    </div>
+                                    <div class="inline">
+                                        &nbsp;Contact the Smugpire
+                                    </div>
+                                    <div class="inline group-hover:tracking-[-0.25em]">
+                                        ˂˂
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </button>
+                    </a>
+                    <div class="h-[10rem]"></div>
                     
                 </div>
                 
@@ -191,7 +233,6 @@
                 x:1200,
                 ease: "power4.inOut",
                 duration: 3,
-                delay: 0.25,
             }
             );
             
@@ -201,7 +242,23 @@
                 x:1200,
                 ease: "power4.inOut",
                 duration: 3,
-                delay: 0.25,
+            }
+            );
+            
+            gsap.from(".image4", 
+            {
+                scrollTrigger: ".image4",
+                x:1200,
+                ease: "power4.inOut",
+                duration: 3,
+            }
+            );
+            
+            gsap.to(".stars4", {
+                scrollTrigger: ".image",
+                duration: 1,
+                text:  "★★★",
+                delay: 0.5,
             }
             );
             
