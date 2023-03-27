@@ -245,12 +245,6 @@
 <script>
     gsap.registerPlugin(ScrollTrigger);
     
-    let viewport = document.querySelector(".viewport"),
-    position = document.querySelector(".position"),
-    stars = document.querySelector(".stars"),    
-    starsSpecial = document.querySelector(".starsSpecial"),
-    image = document.querySelector(".image");    
-    
     gsap.from(".image", 
     {
         scrollTrigger: ".image",
@@ -289,7 +283,7 @@
     gsap.to(".starsSpecial", {
         duration: 1,
         color:'#F000ff',
-        repeat:-1,
+        repeat:'-1',
         yoyo:true,
     }
     );
