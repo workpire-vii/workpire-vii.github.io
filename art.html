@@ -26,6 +26,10 @@
         background-repeat: no-repeat;
         
     }
+    
+    #churro, #churro2{
+        display: none;
+    }
 </style>
 
 <body>
@@ -38,8 +42,8 @@
                 <div class="h-4"></div>
                 <div class="flex">
                     <div class="flex-auto"></div>
-                    <div class="flex-none shadow-2xl rounded-full shadow-red-500 ">  
-                        <img src="/img/croplight.webp" alt="" class="shadow-inner shadow-yellow-400 rounded-full max-w-xs w-64 md:w-32 xl:w-96">
+                    <div class="flex-none shadow-2xl rounded-full shadow-red-500">  
+                        <img src="/img/smugpire.png" alt="" class="shadow-inner rounded-full max-w-xs w-64 md:w-32 xl:w-96">
                     </div>
                     
                     <div class="flex-auto"></div>
@@ -80,8 +84,8 @@
                     <br> I am not touching:
                     <br> - Yaoi/Yuri 
                     <br> - Furry
-                    <br>- Politics
-                    <br>- NSFW <p class="text-gray-700 inline-block">haha...unless...?</p>
+                    <br> - Politics
+                    <br> -&nbsp;<button class="underline hover:text-red-500" onclick="churro()">NSFW</button>
                     
                     
                     
@@ -93,54 +97,56 @@
         </div>
         
         <div class="flex-1  mx-auto bg-black/50 rounded-lg w-full text-white text-center">
-            <br>
-            <div class=" text-white text-2xl md:text-6xl text-center my-2 bg-red-700/70">
+            
+            <div class=" text-white text-2xl md:text-6xl text-center  bg-gradient-to-r via-red-700/80 from-red-900 to-transparent bg-blend-color-burn">
                 4★ SIMPLE, 5★ ADVANCED, and 6★ ELITE added to permanent commission pool!
             </div>
             <div class="">
                 
                 
-                <div class="h-32"></div>
+                <div class="h-[4rem] lg:h-[10rem] "></div>
                 
                 
                 <div class="flex flex-col w-full text-xl">
                     
                     
-                    
-                    
                     <div class="flex-1 my-2 z-10 relative">
-                        <div class="text-8xl font-bold relative flex-1 text-blue-500/80 text-left">SIMPLE
-                            <div class="absolute left-0 -top-12 sm:text-8xl text-5xl text-white/70 stars1 -z-10"></div>
+                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-blue-300/80 text-left"><p class="sm:hidden inline "><br></p>SIMPLE </div>
+                        
+                        
+                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[9rem] md:top-[15rem] lg:top-[21rem] xl:top-[14rem]">
+                            A simple art, fitting your requirements. This product is very useful if you want a funny meme or concept art. Lighting included!  
+                            <div class="font-bold text-4xl md:text-5xl text-cyan-300 halfright1  w-[22rem]">HALF  $5</div>
+                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright1  w-[22rem] ">FULL  $10</div>
+                        </div>
+                        <div  class="group -z-20">
                             
+                            <div class="absolute left-0 right- -z-20 -top-24 text-8xl text-white/80 stars1 "></div>
+                            
+                            <img src="/img/handler3ww.webp" alt="" class="image group-hover:bg-gradient-to-r from-transparent via-transparent  to-blue-500/50 absolute -top-24 -z-10 visible">
                         </div>
-                        
-                        
-                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[7.5rem] md:top-[12rem] lg:top-[18rem] xl:top-[8rem]">
-                            A simple art, fitting your requirements. This product is very useful if you want a funny meme or concept art. You also get optional lighting effects.  
-                            <div class="font-bold text-4xl md:text-5xl text-cyan-300 halfright  w-[22rem]">HALF  $5</div>
-                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright  w-[22rem] ">FULL  $10</div>
-                        </div>
-                        <div class="group"><img src="/img/handler3ww.webp" alt="" class="image group-hover:bg-gradient-to-b from-transparent via-transparent to-blue-500/40 absolute -top-24 -z-10 visible"></div>
                     </div>
                     
-                    <div class="h-[28rem] lg:h-[38rem] xl:h-[24rem]"></div>
+                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]"></div>
                     
                     <div class="flex-1 my-2 z-10 relative">
-                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-yellow-300/80 text-right"><p class="sm:hidden inline "><br></p>ADVANCED
-                            <div class="absolute right-0 -top-12 sm:text-8xl text-white/70 stars2 text-5xl -z-10"> </div>
+                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-yellow-300/80 text-right"><p class="sm:hidden inline "><br></p>ADVANCED </div>
+                        
+                        
+                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[9rem] md:top-[15rem] lg:top-[21rem] xl:top-[14rem]">
+                            A piece with proper lining, coloring, and lighting. The best choice for a character artwork, either for a sheet or for illustration.   
+                            <div class="font-bold text-4xl md:text-5xl text-cyan-300 halfright3  w-[22rem]">HALF  $15</div>
+                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright3  w-[22rem] ">FULL  $20</div>
+                        </div>
+                        <div  class="group -z-20">
                             
+                            <div class="absolute right-0 -z-20 -top-24 text-8xl text-white/80 stars2 "></div>
+                            
+                            <img src="/img/Blacklight-V-IIIcr.webp" alt="" class="image2 group-hover:bg-gradient-to-b from-transparent via-transparent  to-yellow-500/50 absolute -top-24 -z-10 visible">
                         </div>
-                        
-                        
-                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[7.5rem] md:top-[12rem] lg:top-[18rem] xl:top-[7rem]">
-                            A piece with proper lining, coloring, and lighting. The best choice for a character artwork, either for a sheet or for illustration.
-                            <div class="font-bold text-4xl md:text-5xl text-cyan-300 halfright2  w-[22rem]">HALF  $15</div>
-                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright2  w-[22rem] ">FULL  $20</div>
-                        </div>
-                        <div  class="group"><img src="/img/Blacklight-V-IIIcr.webp" alt="" class="image2 group-hover:bg-gradient-to-b from-transparent via-transparent to-yellow-500/40 absolute -top-24 -z-10 visible"></div>                   
                     </div>
                     
-                    <div class="h-[27rem] lg:h-[32rem] xl:h-[28rem]"></div>
+                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]"></div>
                     
                     <div class="flex-1 my-2 z-10 relative">
                         <div class="text-8xl font-bold relative flex-1 text-purple-500/80 text-left">ELITE </div>
@@ -157,54 +163,54 @@
                             
                             <img src="/img/Luna1txt.webp" alt="" class="  absolute -top-24 z-10 visible">
                             
-                            <img src="/img/Luna1fg.webp" alt="" class="image3 group-hover:bg-gradient-to-r from-transparent via-violet-500/30  to-violet-500/50 absolute -top-24 -z-10 visible">
+                            <img src="/img/Luna1fg.webp" alt="" class="image3 group-hover:bg-gradient-to-tr from-transparent via-violet-400/10  to-violet-400/70 absolute -top-24 -z-10 visible">
                             
                             <img src="/img/Luna1bg.webp" alt="" class=" absolute -top-24 -z-30 visible">
                             
                         </div>
                     </div>
                     
-                    <div class="h-[28rem] lg:h-[33rem] xl:h-[28rem]"></div>
+                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]"></div>
                     
-                    <div class="flex-1 my-2 z-10 relative">
-                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-pink-400/80 text-right">CREATURAS
-                            <div class="absolute right-0 -top-12 sm:text-8xl text-5xl text-white/70 stars4 -z-10"></div>
-                            
-                        </div>
+                    <div class="flex-1 my-2 z-10 relative  " id="churro">
+                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-pink-300/80 text-right"><p class="sm:hidden inline "><br></p>CREATURAS </div>
                         
                         
-                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[7.5rem] md:top-[12rem] lg:top-[18rem] xl:top-[8rem]">
+                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[9rem] md:top-[15rem] lg:top-[21rem] xl:top-[14rem]">
                             A chibi, essentially. A small creature. An organism. A lil' guy.
-                            <div class="font-bold text-4xl md:text-5xl text-pink-300 halfright4  w-[22rem]">CREATURA  $10</div>
+                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright4  w-[22rem] ">CREATURA  $10</div>
                         </div>
-                        <div class="group">
-                            <img src="/img/creaturas2.webp" alt="" class="image4 absolute hidden group-hover:block -top-24 z-10 visible">
+                        <div  class="group -z-20">
+                            
+                            <div class="absolute right-0 -z-20 -top-24 text-8xl text-white/80 stars4 "></div>
+                            
+                            <img src="/img/creaturas2.webp" alt="" id="churroTarget" class=" image4 absolute hidden group-hover:block -top-24 z-10 visible">
                             <img src="/img/creaturas.webp" alt="" class="image4 absolute -top-24 -z-10 visible">
                         </div>
+                        
                     </div>
                     
-                    <div class="h-[35rem]"></div>
+                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]" id="churro2"></div>
                     
                     
                     
-                    <a href="commission.html">
-                        <button>
-                            <div class="group m-auto w-11/12 p-8 bg-yellow-400  rounded-md text-black text-4xl text-center hover:bg-yellow-300">
-                                <div class=" align-middle">
-                                    <div class="inline group-hover:tracking-[-0.25em]">
-                                        ˃˃
+                    
+                    
+                    <div class="group flex w-max mx-auto">
+                        <div class="flex-1 text-7xl md:text-9xl text-yellow-500 animate-pulse font-mono align-middle">&ggg;</div>
+                        <a href="commission.html" class="flex-1">
+                            <button>
+                                <div class="group w-auto m-auto p-5 md:p-12 bg-yellow-400  rounded-md text-black md:text-4xl text-center hover:bg-yellow-300">
+                                    <div class="text-center justify-center font-bold">
+                                        
+                                        Commission!
+                                        
                                     </div>
-                                    <div class="inline">
-                                        &nbsp;Contact the Smugpire
-                                    </div>
-                                    <div class="inline group-hover:tracking-[-0.25em]">
-                                        ˂˂
-                                    </div>
-                                    
                                 </div>
-                            </div>
-                        </button>
-                    </a>
+                            </button>
+                        </a>
+                        <div class="flex-1 text-7xl md:text-9xl text-yellow-500 animate-pulse font-mono align-middle">&Ll;</div>
+                    </div>
                     <div class="h-[10rem]"></div>
                     
                 </div>
@@ -231,7 +237,7 @@
                         // GSAP custom code goes here     
                         gsap.from(".image", 
                         {
-                            scrollTrigger: ".halfright",
+                            scrollTrigger: ".halfright1",
                             x:1200,
                             ease: "power4.inOut",
                             duration: 3,
@@ -256,25 +262,10 @@
                         }
                         );
                         
-                        gsap.from(".image4", 
-                        {
-                            scrollTrigger: ".halfright4",
-                            x:1200,
-                            ease: "power4.inOut",
-                            duration: 3,
-                        }
-                        );
                         
-                        gsap.to(".stars4", {
-                            scrollTrigger: ".image",
-                            duration: 1,
-                            text:  "★★★",
-                            delay: 0.5,
-                        }
-                        );
                         
                         gsap.to(".stars1", {
-                            scrollTrigger: ".image",
+                            scrollTrigger: ".halfright1",
                             duration: 1,
                             text:  "★★★★",
                             delay: 0.5,
@@ -282,7 +273,7 @@
                         );
                         
                         gsap.to(".stars2", {
-                            scrollTrigger: ".image2",
+                            scrollTrigger: ".halfright2",
                             
                             duration: 1,
                             text:  "★★★★★",
@@ -292,11 +283,11 @@
                         
                         
                         gsap.to(".stars3", {
-                            scrollTrigger: ".image3",
+                            scrollTrigger: ".halfright3",
                             
                             duration: 1,
                             text:  "★★★★★★",
-                            delay: 0.5,
+                            delay: 1,
                         }
                         );
                         
@@ -308,9 +299,9 @@
                         }
                         );
                         
-                        gsap.from(".halfright", 
+                        gsap.from(".halfright1", 
                         {
-                            scrollTrigger: ".halfright",
+                            scrollTrigger: ".halfright1",
                             x:1200,
                             ease: "power4.inOut",
                             duration: 1,
@@ -338,9 +329,10 @@
                             x:1200,
                             ease: "power4.inOut",
                             duration: 1,
-                            delay: 1,
+                            delay: 2,
                         }
-                        );
+                        );    
+                        
                     });
                     
                 };
@@ -348,6 +340,36 @@
             });
             
             
-            
+            function churro() {
+                var x = document.getElementById("churro");
+                var y = document.getElementById("churro2");
+                x.style.display = "block";
+                y.style.display = "block";
+                x.scrollIntoView({behavior: 'smooth', block:"center",});
+                
+                gsap.from(".halfright4", 
+                {
+                    x:1200,
+                    ease: "power4.inOut",
+                    duration: 1,
+                    delay: 1,
+                }
+                );
+                
+                gsap.from(".image4", 
+                {
+                    x:1200,
+                    ease: "power4.inOut",
+                    duration: 3,
+                }
+                );
+                
+                gsap.to(".stars4", {
+                    duration: 1,
+                    text:  "★★★",
+                    delay: 0.5,
+                }
+                );
+            }
             
         </script>
