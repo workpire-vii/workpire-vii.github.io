@@ -4,21 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+    
     <title>Smugpire | Commission</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-
+    
+    
 </head>
 
 <style>
     body {
-        background-image: url("/img/smugshasa.webp");
+        font-family: monospace;
+        background-image: url("img/bg.webp");
+        background-color: darkred;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: contain;
+        
     }
+    
 </style>
-
 <body>
-    <div class="text-8xl w-screen font-bold text-red-500">UNDER CONSTRUCTION</div>
-
+    <div class="bg-black/40 w-10/12 m-8 text-white p-8 ">
+        <div class="loading text-white text-2xl">//LOADING...<div class="pointer inline">|</div></div>
+        <div class="">
+            <div class="w-11/12 border-b-2 border-dashed">&nbsp;</div>
+            <div class="text-4xl comminfo">//COMMISSION INFORMATION</div>
+            <div class="w-11/12 border-t-2 border-dashed">&nbsp;</div>
+            <div class="text-xl comminfo">
+                //I NEED TO KNOW THESE
+                <br>
+                <br>
+                >COMMISSION CATEGORY: 
+                <br>
+                &nbsp;&nbsp;>>[DECARION] = 15$
+                <br>
+                &nbsp;&nbsp;>>[CENTURION][HALF] = 10$
+                <br>
+                &nbsp;&nbsp;>>[CENTURION][FULL] = 15$
+                <br>
+                &nbsp;&nbsp;>>[LEGION][HALF] = 15$
+                <br>
+                &nbsp;&nbsp;>>[LEGION][FULL] = 25$
+                <br>
+                &nbsp;&nbsp;>>[EXERCITUS][HALF] = $35
+                <br>
+                &nbsp;&nbsp;>>[EXERCITUS][FULL] = $45
+                <br>
+                &nbsp;&nbsp;>>[ARMADA] = FROM $60
+                <br>
+                <br>
+                >AMOUNT OF CHARACTERS:
+                <br>
+                <br>
+                >CONTEXT INFORMATION:
+                <br>
+                &nbsp;&nbsp;>>CHARACTER INFO: 
+                <br>
+                &nbsp;&nbsp;>>BACKGROUND INFO:
+                <br>
+                &nbsp;&nbsp;>>CONTEXT INFO: 
+                <br>
+                <br>
+                >DESIRED ARTSTYLE:
+                
+                
+            </div>
+            <div class="w-11/12 border-b-2 border-dashed">&nbsp;</div>
+            <div class="text-4xl comminfo2">//COMMISSION TERMS</div>
+            <div class="w-11/12 border-t-2 border-dashed">&nbsp;</div>
+            <div class="text-xl comminfo2">
+                //WE AGREE TO THESE
+                <br>
+                <br>
+                >PROCEDURE
+                &nbsp;&nbsp;>>WE WILL DISCUSS THE ART FIRST
+                <br>
+                &nbsp;&nbsp;>>A SKETCH MAY BE PROVIDED IF NECESSARY
+                <br>
+                &nbsp;&nbsp;>>A PAYPAL INVOICE WILL BE SENT
+                <br>
+                &nbsp;&nbsp;>>THE ENTIRE AMOUNT SHALL BE PAID UPFRONT BEFORE BEGINNING
+                <br>
+                &nbsp;&nbsp;>>OPTIONAL: A WATERMARKED VERSION WILL BE POSTED TO MY SOCIALS. YOU CAN REJECT THIS.
+                <br>
+                <br>
+                >[DIVINE]-CLASS WORK
+                <br>
+                <br>
+                >COMMERICAL WORK
+                <br>
+                &nbsp;&nbsp;>>IF YOUR WORK IS CATEGORIZED AS COMMERCIAL
+                <br>
+                &nbsp;&nbsp;&nbsp;>>>STATED PRICES ARE DOUBLED
+                <br>
+                <br>
+                &nbsp;&nbsp;>>OR HIRE ME FOR YOUR PROJECT<div class="pointer inline">|</div>
+                <br>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<script>
+    
+    CommissionAnim();
+    
+    function CommissionAnim(){
+        
+        var tl = new TimelineMax({});
+        
+        tl.from(".loading",{
+            text: "",
+        });
+        tl.from(".comminfo",{
+            text: "",
+            duration: 2,
+        });
+        tl.from(".comminfo2",{
+            text: "",
+            duration: 2,
+        });
+        tl.to(".loading",{
+            text: "",
+        });
+        
+        tl.to(".pointer", {
+            text: "", 
+            repeat: -1,
+        });
+    }
+    
+</script>

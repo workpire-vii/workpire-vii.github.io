@@ -16,7 +16,8 @@
 
 <style>
     body {
-        /* background-image: url("/img/AMTVd.webp"); */
+        font-family: monospace;
+        background-image: url("img/bg.webp");
         background-color: darkred;
         background-size: cover;
         background-position: center;
@@ -25,352 +26,302 @@
         
     }
     
-    #churro, #churro2{
-        display: none;
-    }
 </style>
 
 <body>
-    <div class="overflow-y-hidden  overflow-x-hidden flex flex-col md:flex-row bg-gradient-to-b from-black via-transparent to-black ">
-        <br>
+    <div class="overflow-y-hidden overflow-x-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent  via-transparent to-black">
         
-        <div class="flex-initial overflow-y-hidden  mx-auto bg-gradient-to-b from-black via-transparent to-black   md:w-3/12 text-white text-center">
-            <div class="p-4">
-                <div class="text-4xl lg:text-6xl font-light">SMUGPIRE MAKES ART</div>
-                <div class="h-4"></div>
-                <div class="flex">
-                    <div class="flex-auto"></div>
-                    <div class="flex-none shadow-2xl rounded-full shadow-red-500">  
-                        <img src="/img/smugpire.png" alt="" class="shadow-inner rounded-full max-w-xs w-64 md:w-32 xl:w-96">
-                    </div>
-                    
-                    <div class="flex-auto"></div>
-                </div>
-                <div class="h-2"></div>
-                <div class="text-gray-500">Pictured: A smug bastardpire</div>
-                <div class="text-left">
-                    <br>
-                    Name: Smugpire / ChagrinSnek / Snek
-                    <br>
-                    Age: 25
-                    <br>
-                    Gender: Male
-                    <br>
-                    Location: Malaysia
-                    <br>
-                    <br>
-                    I am Smugpire. My strengths are character design for fantastical settings. Each character has a story to tell with their design, and I love crafting both those stories and the characters themselves. 
-                    <br>
-                    <br>I am happy with: 
-                    <br>+ Female characters
-                    <br>+ Science Fiction 
-                    <br>+ Fantasy
-                    <br>+ Anime 
-                    <br>+ Character design
-                    <br>+ Armor/Clothes
-                    <br>+ Weapons
-                    <br>+ Monsters (figurative)
-                    <br>+ Monsters (literal)
-                    <br>
-                    <br> I am alright with: 
-                    <br> = Male characters
-                    <br> = Hard poses
-                    <br> = Vehicles
-                    <br> = Mecha
-                    <br> = Suggestive
-                    <br>
-                    <br> I am not touching:
-                    <br> - Yaoi/Yuri 
-                    <br> - Furry
-                    <br> - Politics
-                    <br> -&nbsp;<button class="underline hover:text-red-500" onclick="churro()">NSFW</button>
-                    
-                    
-                    
-                    
-                </div>
-                <div class="h-4"></div>
-                
+        <div class="fixed w-screen h-screen z-[99] flex flex-col bg-black" id="welcomeParent">
+            <div class="relative h-1/4 flex-1"></div>
+            <div class="relative flex-1 pt-32 w-screen h-1/2 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900 via-red-950/80 to-transparent text-center text-5xl md:text-7xl text-white align-middle inline">
+                [WELCOME, <div class="inline" id="welcomeText">COMMISSIONER</div>]
             </div>
+            <div class="relative h-1/4 flex-1"></div>
         </div>
         
-        <div class="flex-1  mx-auto bg-black/50 rounded-lg w-full text-white text-center">
-            
-            <div class=" text-white text-2xl md:text-6xl text-center  bg-gradient-to-r via-red-700/80 from-red-900 to-transparent bg-blend-color-burn">
-                4★ SIMPLE, 5★ ADVANCED, and 6★ ELITE added to permanent commission pool!
-            </div>
+        
+        
+        <div class="  mx-auto bg-black/50  w-full text-white text-center">
             <div class="">
                 
-                
-                <div class="h-[4rem] lg:h-[10rem] "></div>
-                
-                
-                <div class="flex flex-col w-full text-xl">
-                    
-                    
-                    <div class="flex-1 my-2 z-10 relative">
-                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-blue-300/80 text-left"><p class="sm:hidden inline "><br></p>SIMPLE </div>
-                        
-                        
-                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[9rem] md:top-[15rem] lg:top-[21rem] xl:top-[14rem]">
-                            A simple art, fitting your requirements. This product is very useful if you want a funny meme or concept art. Lighting included!  
-                            <div class="font-bold text-4xl md:text-5xl text-cyan-300 halfright1  w-[22rem]">HALF  $5</div>
-                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright1  w-[22rem] ">FULL  $10</div>
-                        </div>
-                        <div  class="group -z-20">
+                <div class=" w-full h-full relative z-[90]" id="parent">
+                    <div class="">                        
+                        <div class="relative overflow-hidden h-screen mx-auto" id="carousel">
                             
-                            <div class="absolute left-0 right- -z-20 -top-24 text-8xl text-white/80 stars1 "></div>
                             
-                            <img src="/img/handler3ww.webp" alt="" class="image group-hover:bg-gradient-to-r from-transparent via-transparent  to-blue-500/50 absolute -top-24 -z-10 visible">
-                        </div>
-                    </div>
-                    
-                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]"></div>
-                    
-                    <div class="flex-1 my-2 z-10 relative">
-                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-yellow-300/80 text-right"><p class="sm:hidden inline "><br></p>ADVANCED </div>
-                        
-                        
-                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[9rem] md:top-[15rem] lg:top-[21rem] xl:top-[14rem]">
-                            A piece with proper lining, coloring, and lighting. The best choice for a character artwork, either for a sheet or for illustration.   
-                            <div class="font-bold text-4xl md:text-5xl text-cyan-300 halfright2  w-[22rem]">HALF  $15</div>
-                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright2  w-[22rem] ">FULL  $20</div>
-                        </div>
-                        <div  class="group -z-20">
-                            
-                            <div class="absolute right-0 -z-20 -top-24 text-8xl text-white/80 stars2 "></div>
-                            
-                            <img src="/img/Blacklight-V-IIIcr.webp" alt="" class="image2 group-hover:bg-gradient-to-b from-transparent via-transparent  to-yellow-500/50 absolute -top-24 -z-10 visible">
-                        </div>
-                    </div>
-                    
-                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]"></div>
-                    
-                    <div class="flex-1 my-2 z-10 relative">
-                        <div class="text-8xl font-bold relative flex-1 text-purple-500/80 text-left">ELITE </div>
-                        
-                        
-                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[9rem] md:top-[15rem] lg:top-[21rem] xl:top-[14rem]">
-                            Even more than ADVANCED. Lineart, colors, shading, lighting, and background. The whole thing, worthy of a 6★!      
-                            <div class="font-bold text-4xl md:text-5xl text-cyan-300 halfright3  w-[22rem]">HALF  $25</div>
-                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright3  w-[22rem] ">FULL  $30</div>
-                        </div>
-                        <div  class="group -z-20">
-                            
-                            <div class="absolute left-0 right- -z-20 -top-24 sm:text-8xl text-5xl text-pink-400/80 stars3 starsSpecial"></div>
-                            
-                            <img src="/img/Luna1txt.webp" alt="" class="  absolute -top-24 z-10 visible">
-                            
-                            <img src="/img/Luna1fg.webp" alt="" class="image3  group-hover:bg-gradient-to-tr from-transparent via-violet-400/10  to-violet-400/70 absolute -top-24 -z-10 visible">
-                            
-                            <img src="/img/Luna1bg.webp" alt="" class=" absolute -top-24 -z-30 visible">
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]"></div>
-                    
-                    <div class="flex-1 my-2 z-10 relative" id="churro">
-                        <div class="text-6xl sm:text-8xl font-bold relative flex-1 text-pink-300/80 text-right"><p class="sm:hidden inline "><br></p>CREATURAS </div>
-                        
-                        
-                        <div class="text-lg md:text-2xl bg-black/60  w-full xl:w-4/12 p-4 absolute float-right top-[9rem] md:top-[15rem] lg:top-[21rem] xl:top-[14rem] ">
-                            You've found the secret category because you were horny. smh. 
-                            <div class="font-bold text-4xl md:text-5xl text-red-400 halfright4  w-[22rem] ">CREATURA  $10</div>
-                        </div>
-                        <div  class="group -z-20">
-                            
-                            <div class="absolute right-0 -z-20 -top-24 text-8xl text-white/80 stars4 "></div>
-                            
-                            <img src="/img/creaturas2.webp" alt="" id="churroTarget" class=" image4  absolute hidden group-hover:block -top-24 z-10 visible">
-                            <img src="/img/creaturas.webp" alt="" class="image4   absolute -top-24 -z-10 visible">
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="h-[28rem] lg:h-[33rem] xl:h-[36rem]" id="churro2"></div>
-                    
-                    
-                    
-                    
-                    
-                    <div class="group flex w-max mx-auto">
-                        <div class="flex-1 text-7xl md:text-9xl text-yellow-500 animate-pulse font-mono align-middle">&ggg;</div>
-                        <a href="commission.html" class="flex-1">
-                            <button>
-                                <div class="group w-auto m-auto p-5 md:p-12 bg-yellow-400  rounded-md text-black md:text-4xl text-center hover:bg-yellow-300">
-                                    <div class="text-center justify-center font-bold">
-                                        
-                                        Commission!
-                                        
-                                    </div>
+                            <button class="absolute left-0 top-0 z-[92] group hover:bg-gradient-to-r from-red-700/50 to-transparent h-screen flex flex-col w-1/6" id="prev">
+                                <div class="h-1/2"></div>
+                                <div class="text-7xl md:text-9xl text-red-600  text-left">
+                                    <[
                                 </div>
+                                <div class="h-1/2"></div>
                             </button>
-                        </a>
-                        <div class="flex-1 text-7xl md:text-9xl text-yellow-500 animate-pulse font-mono align-middle">&Ll;</div>
+                            
+                            <button class="absolute right-0 top-0 z-[92] group hover:bg-gradient-to-l from-red-700/50 to-transparent h-screen flex flex-col w-1/6" id="next">
+                                <div class="h-1/2"></div>
+                                <div class="text-7xl md:text-9xl text-red-600  text-right">
+                                    ]>
+                                </div>
+                                <div class="h-1/2"></div>
+                            </button>
+                            
+                            <div class="object-scale-down slide h-full w-full absolute top-0 left-0" id="churro">
+                                <div class="text-6xl md:text-8xl  relative flex-1 text-green-300/80 text-left"><p class="md:hidden inline "><br></p><div class="title inline">[DECARION]</div></div>
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[FULL  $15]</div>
+                                <div class="h-1/2"></div>
+                                
+                                <div class="text-left left-0 z-20 text-7xl md:text-9xl text-green-300/90 stars">[★]</div>
+                                
+                                <div class="group">
+                                    <img src="img/creaturas.webp" alt="" class="-translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image  absolute -top-24 -z-10 visible">
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="slide h-full w-full absolute top-0 left-0 ">
+                                <div class="text-6xl md:text-8xl  relative flex-1 text-blue-300/70 text-left"><p class="md:hidden inline "><br></p><div class="title inline">[CENTURION]</div></div>
+                                
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[HALF  $10]</div>
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[FULL  $15]</div>
+                                <div class="h-1/2"></div>
+                                
+                                <div class="text-left left-0 z-20 text-7xl md:text-9xl text-white stars ">[★★]</div>
+                                <img src="img/handler3ww.webp" alt="" class="-translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-gradient-to-r from-transparent via-transparent  to-blue-500/50 absolute -top-24 -z-10 visible" >
+                            </div>
+                            
+                            
+                            
+                            <div class="slide h-full w-full absolute top-0 left-0">
+                                <div class="text-6xl md:text-8xl  relative flex-1 text-yellow-300/80 text-left"><p class="md:hidden inline "><br></p><div class="title inline">[LEGION]</div></div>
+                                
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[HALF  $15]</div>
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[FULL  $25]</div>
+                                <div class="h-1/2"></div>
+                                
+                                <div class="text-left left-0 z-20 text-7xl md:text-9xl text-white stars ">[★★★]</div>
+                                
+                                <img src="img/Blacklight-V-IIIcr.webp" alt="" class="-translate-x-1/3 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-gradient-to-r from-transparent via-transparent  to-blue-500/50 absolute -top-24 -z-10 visible">
+                            </div>
+                            
+                            <div class="slide h-full w-full absolute top-0 left-0 ">
+                                <div class="text-6xl md:text-8xl  relative flex-1 text-red-600/80 text-left "><p class="md:hidden inline "><br></p><div class="title inline">[EXERCITUS]</div></div>
+                                
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[HALF  $35]</div>
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[FULL  $45]</div>
+                                <div class="h-1/2"></div>
+                                <div class="text-left left-0 z-20 text-7xl md:text-9xl text-red-600 stars starsSpecial z-70">[★★★★]</div>
+                                
+                                
+                                <img src="img/Luna1txt.webp" alt="" class="object-fill -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl absolute -top-24 z-[60] visible">
+                                
+                                
+                                <img src="img/Luna1fg.webp" alt="" class="object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-gradient-to-r from-transparent via-transparent  to-blue-500/50 absolute -top-24 -z-[9] visible">
+                                
+                                <img src="img/Luna1bg.webp" alt="" class="object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl  absolute -top-24 -z-10 visible">
+                                
+                            </div>
+                            
+                            <div class="slide h-full w-full absolute top-0 left-0 ">
+                                <div class="text-6xl md:text-8xl  relative flex-1 text-purple-600/80 text-left "><p class="md:hidden inline "><br></p><div class="title inline">[ARMADA]</div></div>
+                                
+                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left">[CONTACT]</div>
+                                <div class="h-1/2"></div>
+                                <div class="text-left left-0 z-20 text-7xl md:text-9xl text-purple-600 stars starsSpecial z-70">[★★★★★]</div>
+                                
+                                
+    
+                                
+                                
+                                <img src="https://i.imgur.com/zRKgXlt.gifv" alt="" class="object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-gradient-to-r from-transparent via-transparent  to-blue-500/50 absolute -top-24 -z-[9] visible">
+                                
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                        
                     </div>
-                    <div class="h-[10rem]"></div>
-                    
                 </div>
                 
-                
+                <div class="group flex w-max mx-auto">
+                    <div class="flex-1 text-7xl md:text-9xl text-red-600/80 animate-pulse font-mono align-middle">&ggg;</div>
+                    <a href="commission.html" class="flex-1">
+                        <button>
+                            <div class="group w-auto m-auto p-5 md:p-12 bg-red-600/20 md:text-4xl text-center text-white hover:bg-red-300/20">
+                                <div class="text-center justify-center ">
+                                    
+                                    [ORDER]
+                                    
+                                </div>
+                            </div>
+                        </button>
+                    </a>
+                    <div class="flex-1 text-7xl md:text-9xl text-red-600/80 animate-pulse font-mono align-middle">&Ll;</div>
+                </div>
+                <div class="h-[10rem]"></div>
                 
             </div>
-        </body>
-        </html>
-        
-        <script>
-            gsap.registerPlugin(ScrollTrigger);
             
-            // wait until DOM is ready
-            document.addEventListener("DOMContentLoaded", function(event) {
-                
-                // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
-                // you could also use addEventListener() instead
-                window.onload = function() {
+            <div class="bg-gradient-to-b from-black via-transparent to-black w-full">
+                <div class="flex flex-row overflow-y-hidden md:w-4/6 mx-auto  text-white text-center">
                     
-                    // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
-                    window.requestAnimationFrame(function() {
-                        
-                        // GSAP custom code goes here     
-                        gsap.from(".image", 
-                        {
-                            scrollTrigger: ".halfright1",
-                            x:1200,
-                            ease: "power4.inOut",
-                            duration: 3,
-                        }
-                        );
-                        
-                        gsap.from(".image2", 
-                        {
-                            scrollTrigger: ".halfright2",
-                            x:1200,
-                            ease: "power4.inOut",
-                            duration: 3,
-                        }
-                        );
-                        
-                        gsap.from(".image3", 
-                        {
-                            scrollTrigger: ".halfright3",
-                            x:1200,
-                            ease: "power4.inOut",
-                            duration: 3,
-                        }
-                        );
-                        
-                        
-                        
-                        gsap.to(".stars1", {
-                            scrollTrigger: ".halfright1",
-                            duration: 1,
-                            text:  "★★★★",
-                            delay: 0.5,
-                        }
-                        );
-                        
-                        gsap.to(".stars2", {
-                            scrollTrigger: ".halfright2",
+                    <div class="p-8 z-50">
+                        <div class="flex flex-col gap-y-4">
+                            <div class="h-16 w-16 group">
+                                <a href="https://twitter.com/smugpire" class="inline"><img src="img/twitter-logo-2429.svg" alt="" class="inline"></a>
+                                <div class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl ">@smugpire</div>
+                            </div>
                             
-                            duration: 1,
-                            text:  "★★★★★",
-                            delay: 0.5,
-                        }
-                        );
-                        
-                        
-                        gsap.to(".stars3", {
-                            scrollTrigger: ".halfright3",
+                            <div class="h-16 w-16 group">
+                                <img src="img/discord-icon-svgrepo-com.svg" alt="" class="inline">
+                                <div class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl">Smugpire#6538</div>
+                            </div>
                             
-                            duration: 1,
-                            text:  "★★★★★★",
-                            delay: 1,
-                        }
-                        );
-                        
-                        gsap.to(".starsSpecial", {
-                            duration: 0.5,
-                            color:'#FFFFFF',
-                            repeat:'-1',
-                            yoyo:true,
-                        }
-                        );
-                        
-                        gsap.from(".halfright1", 
-                        {
-                            scrollTrigger: ".halfright1",
-                            x:1200,
-                            ease: "power4.inOut",
-                            duration: 1,
-                            delay: 2,
-                        }
-                        );
-                        
-                        
-                        
-                        gsap.from(".halfright2", 
-                        {
-                            scrollTrigger: ".halfright2",
-                            x:1200,
-                            ease: "power4.inOut",
-                            duration: 1,
-                            delay: 2,
-                        }
-                        );
-                        
-                        
-                        
-                        gsap.from(".halfright3", 
-                        {
-                            scrollTrigger: ".halfright3",
-                            x:1200,
-                            ease: "power4.inOut",
-                            duration: 1,
-                            delay: 2,
-                        }
-                        );    
-                        
-                    });
+                            <div class="h-16 w-16 group">
+                                <a href="https://www.deviantart.com/snekscheesycanvas" class="inline"><img src="img/DeviantArt_Logo2.svg" alt="" class="inline"></a>
+                                <div class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl ">SneksCheesyCanvas</div>
+                            </div>
+                        </div>
+                    </div>
                     
-                };
-                
+                    <div class="p-8">
+                        <div class="text-4xl lg:text-6xl ">SMUGPIRE MAKES ART</div>
+                        <div class="h-4"></div>
+                        <div class="flex">
+                            <div class="flex-auto"></div>
+                            <div class="flex-none shadow-2xl rounded-full shadow-red-500">  
+                                <img src="img/smugpire.png" alt="" class="shadow-inner rounded-full max-w-xs w-64 md:w-32 xl:w-96">
+                            </div>
+                            
+                            <div class="flex-auto"></div>
+                        </div>
+                        <div class="h-2"></div>
+                        
+                        <div class="text-gray-500">Pictured: A smug bastardpire</div>
+                    </div>
+                    
+                    
+                    
+                    <div class="text-left p-8 text-xl">
+                        <br>
+                        Name: Smugpire
+                        <br>
+                        Age: 25
+                        <br>
+                        Gender: Male
+                        <br>
+                        Location: Malaysia
+                        <br>
+                        <br>
+                        I am Smugpire. I love designing for fantastical settings! Each character has a story to tell with their design, and I love crafting both those stories and the characters themselves. I am unfortunately a vampire addict. 
+                        <br>
+                        <br> WILL NOT DO:
+                        <br> - Yaoi/Yuri 
+                        <br> - Furry
+                        <br> - Politics
+                        <br> - NSFW
+                    </div>
+                    
+                    
+                    <div class="h-4"></div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    WelcomeAnim();
+    Carousel();
+    
+    function WelcomeAnim(){
+        tl = new TimelineMax({});
+        tl.from("#welcomeText", {
+            duration: 1.5,
+            text: "____________",
+        }
+        );
+        tl.to("#welcomeParent",{
+            duration: 0.5,
+            opacity: 0,
+            display: "none",
+        })
+        
+        
+    }
+    
+    function Carousel(){ 
+        const carousel = document.querySelector('#carousel');
+        const slides = Array.from(carousel.querySelectorAll('.slide'));
+        let currentIndex = 0;
+        
+        tl = new TimelineMax({delay:1.5,});
+        
+        tl.from(".image", 
+        {
+            x:2000,
+            ease: "power2.inOut",
+            duration: 0.75,
+            
+        }
+        );
+        
+        tl.from(".stars", {
+            duration: 1.25,
+            text:  "#ERROR",
+            delay: -1,
+        }
+        );
+        
+        tl.from(".title", {
+            duration: 1,
+            text:  "#ERROR",
+            delay: -1,
+        }
+        );
+        
+        tl.from(".price", 
+        {
+            text: "#ERROR",
+            duration: 0.75,
+            delay:-1,
+        }
+        );
+        
+        function showSlide(index) {
+            slides.forEach(slide => {
+                slide.style.display = 'none';
             });
-            
-            
-            function churro() {
-                var x = document.getElementById("churro");
-                var y = document.getElementById("churro2");
-                x.style.display = "block";
-                y.style.display = "block";
-                x.scrollIntoView({behavior: 'smooth', block:"center",});
-                
-                gsap.from(".halfright4", 
-                {
-                    x:1200,
-                    ease: "power4.inOut",
-                    duration: 1,
-                    delay: 1,
-                }
-                );
-                
-                gsap.from(".image4", 
-                {
-                    x:1200,
-                    ease: "power4.inOut",
-                    duration: 3,
-                }
-                );
-                
-                gsap.to(".stars4", {
-                    duration: 1,
-                    text:  "★★★",
-                    delay: 0.5,
-                }
-                );
-            }
-            
+            slides[index].style.display = 'block';
+        }
         
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+            tl.play(0);
+        }
+        
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+            tl.play(0);
+        }
+        
+        function sameSlide(){
             
-            
-        </script>
+            tl.play(0);
+        }
+        
+        showSlide(currentIndex);
+        
+        document.querySelector('#prev').addEventListener('click', prevSlide);
+        document.querySelector('#next').addEventListener('click', nextSlide);
+        document.querySelector('#welcomeParent').addEventListener('click', sameSlide);
+        
+    }
+</script>
