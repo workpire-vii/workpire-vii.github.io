@@ -70,7 +70,7 @@
                                         <br>
                                     </p>
                                     <div class="title inline md:block bg-black/50">/DECARION</div>
-                                    <div class="text-2xl bg-black/50">//A CREATURA, ALSO KNOWN AS CHIBI.</div>
+                                    <div class="text-2xl bg-black/50 desc">//A CREATURA, ALSO KNOWN AS CHIBI.</div>
                                     
                                 </div>
                                 <div class="pl-8  text-4xl text-white price w-[22rem] text-left bg-black/50">//FULL  $15</div>
@@ -95,7 +95,7 @@
                                         <br>
                                     </p>
                                     <div class="title inline md:block bg-black/50">/CENTURION</div>
-                                    <div class="text-2xl bg-black/50">//A SIMPLE PIECE, WITH LINEART AND COLOR.</div>
+                                    <div class="text-2xl bg-black/50 desc">//A SIMPLE PIECE, WITH LINEART AND COLOR.</div>
                                     
                                 </div>
                                 
@@ -118,7 +118,7 @@
                                         <br>
                                     </p>
                                     <div class="title inline md:block bg-black/50">/LEGION</div>
-                                    <div class="text-2xl bg-black/50">//A MORE COMPLEX PIECE, WITH LINEART, COLOR, LIGHTING, AND MORE DETAIL.</div>
+                                    <div class="text-2xl bg-black/50 desc">//A MORE COMPLEX PIECE, WITH LINEART, COLOR, LIGHTING, AND MORE DETAIL.</div>
                                     
                                 </div>
                                 
@@ -139,7 +139,7 @@
                                         <br>
                                     </p>
                                     <div class="title inline md:block bg-black/50">/EXERCITUS</div>
-                                    <div class="text-2xl bg-black/50">//A COMPLEX PIECE LIKE [LEGION] BUT WITH SHADING AND BACKGROUND.</div>
+                                    <div class="text-2xl bg-black/50 desc">//A COMPLEX PIECE LIKE [LEGION] BUT WITH SHADING AND BACKGROUND.</div>
                                     
                                 </div>
                                 
@@ -162,7 +162,7 @@
                                         <br>
                                     </p>
                                     <div class="title inline md:block bg-black/50">/ARMADA</div>
-                                    <div class="text-2xl bg-black/50">//AN [EXERCITUS]-LEVEL PIECE WITH TWEEN ANIMATION.</div>
+                                    <div class="text-2xl bg-black/50 desc">//AN [EXERCITUS]-LEVEL PIECE WITH TWEEN ANIMATION.</div>
                                     
                                 </div>
                                 
@@ -189,7 +189,7 @@
                         
                     </div>
                 </div>
-                                
+                
             </div>
             
             <div class="bg-gradient-to-b from-black via-transparent to-black w-full">
@@ -325,6 +325,13 @@
         {
             text: "#ERROR",
             duration: 0.75,
+            delay:-1,
+        });
+        
+        tl.from(".desc", 
+        {
+            text: "#ERROR",
+            duration: 1,
             delay:-1,
         }
         );
