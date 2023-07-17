@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
     
     <title>Smugpire | Art</title>
-    
-    
 </head>
 
 <style>
@@ -24,247 +22,386 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         image-rendering: pixelated;
-        
     }
-    
 </style>
 
 <body>
-    <div class="overflow-y-hidden overflow-x-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent  via-transparent to-black">
-        
-        <div class="fixed w-screen h-screen z-[99] flex flex-col bg-black" id="welcomeParent">
-            <div class="relative h-1/4 flex-1"></div>
-            <div class="relative flex-1 pt-32 w-screen h-1/2 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900 via-red-950/80 to-transparent text-center text-5xl md:text-7xl text-white align-middle inline">
-                [WELCOME, <div class="inline" id="welcomeText">COMMISSIONER</div>]
-            </div>
-            <div class="relative h-1/4 flex-1"></div>
-        </div>
-        
-        
-        
-        <div class="  mx-auto bg-black/50  w-full text-white text-center">
+    <div class="block sm:hidden text-3xl text-orange-500 bg-black z-[100] absolute">
+        [!] NOT SUITABLE FOR MOBILE VIEW
+    </div>
+    
+    <div
+    class="overflow-y-hidden overflow-x-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-black"
+    >
+    <div
+    class="fixed w-screen h-screen z-[99] flex flex-col bg-black"
+    id="welcomeParent"
+    >
+    <div class="relative h-1/4 flex-1"></div>
+    <div
+    class="relative flex-1 pt-32 w-screen h-1/2 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900 via-red-950/80 to-transparent text-center text-5xl md:text-7xl text-white align-middle inline"
+    >
+    [WELCOME,
+    <div class="inline" id="welcomeText">COMMISSIONER</div>
+    ]
+</div>
+
+<div class="relative h-1/4 flex-1"></div>
+</div>
+
+<div class="mx-auto bg-black/50 w-full text-white text-center">
+    <div class="">
+        <div class="w-full h-full relative z-[90]" id="parent">
             <div class="">
-                
-                <div class=" w-full h-full relative z-[90]" id="parent">
-                    <div class="">                        
-                        <div class="relative overflow-hidden h-screen mx-auto" id="carousel">
-                            
-                            <button class="absolute left-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-r from-red-700/50 to-transparent h-screen flex flex-col w-1/6" id="prev">
-                                <div class="h-1/2"></div>
-                                <div class="pointer-events-auto text-7xl md:text-9xl text-red-600  text-left bg-red-900/40">
-                                    <[
-                                </div>
-                                <div class="h-1/2"></div>
-                            </button>
-                            
-                            <button class="absolute right-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-l from-red-700/50 to-transparent h-screen flex flex-col w-1/6" id="next">
-                                <div class="h-1/2"></div>
-                                <div class="pointer-events-auto text-7xl md:text-9xl text-red-600  text-right bg-red-900/40">
-                                    ]>
-                                </div>
-                                <div class="h-1/2"></div>
-                            </button>
-                            
-                            <div class="object-scale-down slide h-full w-full absolute top-0 left-0 group" id="churro">
-                                <div class="text-6xl md:text-8xl  relative flex-1 text-green-300 text-left">
-                                    <p class="md:hidden inline ">
-                                        <br>
-                                    </p>
-                                    <div class="title inline md:block bg-black/50">/DECARION</div>
-                                    <div class="text-2xl bg-black/50 desc">//THE SIMPLEST ART LEVEL. A ROUGH FULL COLOR WITH SHADING.</div>
-                                    
-                                </div>
-                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left bg-black/50">//PRICE = $10</div>
-                                <div class="h-1/2"></div>
-                                
-                                <div class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20">
-                                    <div class="text-white stars starsSpecial inline">//★</div>
-                                    <a href="commission.html" class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]">[ORDER]</a>
-                                </div>                                
-                                
-                                
-                                
-                                <img src="img/decarion.webp" alt="" class="-translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image  absolute -top-24 -z-10 visible">
-                                
-                            </div>
-                            
-                            <div class="slide h-full w-full absolute top-0 left-0 group">
-                                <div class="text-6xl md:text-8xl  relative flex-1 text-blue-300 text-left">
-                                    <p class="md:hidden inline ">
-                                        <br>
-                                    </p>
-                                    <div class="title inline md:block bg-black/50">/CENTURION</div>
-                                    <div class="text-2xl bg-black/50 desc">//A BASIC FULL ART WITH MEDIUM DETAIL.</div>
-                                    
-                                </div>
-                                
-                                <div class="pl-8  text-4xl bg-black/50 text-white price w-[22rem] text-left">//PRICE = $30</div>
-                                <div class="h-1/2"></div>
-                                
-                                <div class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20">
-                                    <div class="text-white stars starsSpecial inline">//★★</div>
-                                    <a href="commission.html" class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]">[ORDER]</a>
-                                </div>
-                                <img src="img/centurion.webp" alt="" class="object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-700/50 via-red-700/10 to-transparent absolute -top-24 -z-[9] visible">
-                                
-                                <img src="img/centurion_bg.webp" alt="" class=" imagebg object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl  absolute -top-24 -z-10 visible">
-                            </div>
-                            
-                            
-                            
-                            <div class="slide h-full w-full absolute top-0 left-0 group">
-                                <div class="text-6xl md:text-8xl  relative flex-1 text-yellow-500 text-left">
-                                    <p class="md:hidden inline ">
-                                        <br>
-                                    </p>
-                                    <div class="title inline md:block bg-black/50">/LEGION</div>
-                                    <div class="text-2xl bg-black/50 desc">//A MORE COMPLEX PIECE, WITH HIGH DETAIL.</div>
-                                    
-                                </div>
-                                
-                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left bg-black/50">//PRICE = $40</div>
-                                <div class="h-1/2"></div>
-                                
-                                <div class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20">
-                                    <div class="text-white stars  inline">//★★★</div>
-                                    <a href="commission.html" class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]">[ORDER]</a>
-                                </div>                                
-                                
-                                <img src="img/legion.webp" alt="" class="-translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image  absolute -top-24 -z-10 visible">
-                                
-                            </div>
-                            
-                            <div class="slide h-full w-full absolute top-0 left-0 group">
-                                <div class="text-6xl md:text-8xl  relative flex-1 text-red-600 text-left">
-                                    <p class="md:hidden inline ">
-                                        <br>
-                                    </p>
-                                    <div class="title inline md:block bg-black/50">/EXERCITUS</div>
-                                    <div class="text-2xl bg-black/50 desc">//A PIECE LIKE [LEGION] BUT WITH A COMPLEX BACKGROUND.</div>
-                                    
-                                </div>
-                                
-                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left bg-black/50">//PRICE = $50</div>
-                                <div class="h-1/2"></div>
-                                <div class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20">
-                                    <div class="text-white stars starsSpecial inline">//★★★★</div>
-                                    <a href="commission.html" class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]">[ORDER]</a>
-                                </div>                                
-                                <img src="img/exercitus.webp" alt="" class="object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-700 via-red-700/30 to-transparent absolute -top-24 -z-[9] visible">
-                                
-                                <img src="img/exercitus_bg.webp" alt="" class=" imagebg object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl  absolute -top-24 -z-10 visible">
-                                
-                            </div>
-                            
-                            <div class="slide h-full w-full absolute top-0 left-0 group">
-                                <div class="text-6xl md:text-8xl  relative flex-1 text-purple-500 text-left">
-                                    <p class="md:hidden inline ">
-                                        <br>
-                                    </p>
-                                    <div class="title inline md:block bg-black/50">/ARMADA</div>
-                                    <div class="text-2xl bg-black/50 desc">//TWEEN ANIMATION</div>
-                                    
-                                </div>
-                                
-                                <div class="pl-8  text-4xl text-white price w-[22rem] text-left bg-black/50">//CONTACT FOR PRICE</div>
-                                <div class="h-1/2"></div>
-                                <div class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20">
-                                    <div class="text-white stars starsSpecial inline">//★★★★★</div>
-                                    <a href="commission.html" class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]">[ORDER]</a>
-                                </div>
-                                
-                                
-                                
-                                
-                                
-                                <img src="https://i.imgur.com/zRKgXlt.gif" alt="" class="object-fill  -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image absolute -top-24 -z-[9] visible" height="1080px" width="1920px">
-                                
-                                
-                            </div>
-                            
-                            
-                            
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-                
+                <div
+                class="relative overflow-hidden h-screen mx-auto"
+                id="carousel"
+                >
+                <button
+                class="absolute left-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-r from-red-700/50 to-transparent h-screen flex flex-col w-1/6"
+                id="prev"
+                >
+                <div class="h-1/2"></div>
+                <div
+                class="pointer-events-auto text-7xl md:text-9xl text-red-600 text-left bg-red-900/40"
+                >
+                <[
             </div>
-            
-            <div class="bg-gradient-to-b from-black via-transparent to-black w-full">
-                <div class="flex flex-col sm:flex-row overflow-y-hidden md:w-4/6 mx-auto  text-white text-center">
-                    
-                    <div class="p-8 z-50">
-                        <div class="flex flex-row sm:flex-col gap-y-4">
-                            <div class="h-16 w-16 group">
-                                <a href="https://twitter.com/smugpire" class="inline"><img src="img/twitter-logo-2429.svg" alt="" class="inline"></a>
-                                <div class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl ">@smugpire</div>
-                            </div>
-                            
-                            <div class="h-16 w-16 group">
-                                <img src="img/discord-icon-svgrepo-com.svg" alt="" class="inline">
-                                <div class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl">smugpire</div>
-                            </div>
-                            
-                            <div class="h-16 w-16 group">
-                                <a href="https://www.deviantart.com/snekscheesycanvas" class="inline"><img src="img/DeviantArt_Logo2.svg" alt="" class="inline"></a>
-                                <div class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl ">SneksCheesyCanvas</div>
-                            </div>
-                            
-                            <div class="h-16 w-16 group">
-                                <a href="https://cara.app/smugpire" class="inline"><img src="img/cara-logo.webp" alt="" class="inline"></a>
-                                <div class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl ">Smugpire</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="px-8">
-                        <div class="text-4xl lg:text-6xl ">SMUGPIRE MAKES ART</div>
-                        <div class="h-4"></div>
-                        <div class="flex">
-                            <div class="flex-auto"></div>
-                            <div class="flex-none shadow-2xl rounded-full shadow-red-500">  
-                                <img src="img/smugpire.webp" alt="" class="shadow-inner rounded-full max-w-xs w-64 md:w-32 xl:w-96 block">
-                            </div>
-                            
-                            <div class="flex-auto"></div>
-                        </div>
-                        <div class="h-2"></div>
-                        
-                        <div class="text-xl text-gray-500">Pictured: A smug bastardpire</div>
-                    </div>
-                    
-                    
-                    
-                    <div class="text-left p-8 text-xl">
-                        <br>
-                        Name: Smugpire
-                        <br>
-                        Age: Not on the clock
-                        <br>
-                        Gender: Male
-                        <br>
-                        Location: Malaysia
-                        <br>
-                        <br>
-                        I am Smugpire. I love designing for fantastical settings! Each character has a story to tell with their design, and I love crafting both those stories and the characters themselves. I am unfortunately a vampire addict. 
-                        <br>
-                        <br> WILL NOT DO:
-                        <br> - Yaoi/Yuri 
-                        <br> - Furry
-                        <br> - Politics
-                        <br> - NSFW
-                    </div>
-                    
-                    
-                    <div class="h-4"></div>
-                    
-                </div>
-            </div>
-            
+            <div class="h-1/2"></div>
+        </button>
+        
+        <button
+        class="absolute right-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-l from-red-700/50 to-transparent h-screen flex flex-col w-1/6"
+        id="next"
+        >
+        <div class="h-1/2"></div>
+        <div
+        class="pointer-events-auto text-7xl md:text-9xl text-red-600 text-right bg-red-900/40"
+        >
+        ]>
+    </div>
+    <div class="h-1/2"></div>
+</button>
+
+<div
+class="object-scale-down slide h-full w-full absolute top-0 left-0 group"
+id="churro"
+>
+<div
+class="text-6xl md:text-8xl relative flex-1 text-green-300 text-left"
+>
+<p class="md:hidden inline">
+    <br />
+</p>
+<div class="title inline md:block bg-black/50">
+    /DECARION
+</div>
+<div class="text-2xl bg-black/50 desc">
+    //THE SIMPLEST ART LEVEL. A ROUGH FULL COLOR WITH SHADING.
+</div>
+</div>
+<div
+class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50"
+>
+//PRICE = $10
+</div>
+<div class="h-1/2"></div>
+
+<div
+class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20"
+>
+<div class="text-white stars starsSpecial inline">//★</div>
+<a
+href="commission.html"
+class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]"
+>[ORDER]</a
+>
+</div>
+
+<img
+src="img/decarion.webp"
+alt=""
+class="-translate-x-1/4 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image absolute -top-24 -z-10 visible"
+/>
+</div>
+
+<div class="slide h-full w-full absolute top-0 left-0 group">
+    <div
+    class="text-6xl md:text-8xl relative flex-1 text-blue-300 text-left"
+    >
+    <p class="md:hidden inline">
+        <br />
+    </p>
+    <div class="title inline md:block bg-black/50">
+        /CENTURION
+    </div>
+    <div class="text-2xl bg-black/50 desc">
+        //A BASIC FULL ART WITH MEDIUM DETAIL.
+    </div>
+</div>
+
+<div
+class="pl-8 text-4xl bg-black/50 text-white price w-[22rem] text-left"
+>
+//PRICE = $30
+</div>
+<div class="h-1/2"></div>
+
+<div
+class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20"
+>
+<div class="text-white stars starsSpecial inline">//★★</div>
+<a
+href="commission.html"
+class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]"
+>[ORDER]</a
+>
+</div>
+<img
+src="img/centurion.webp"
+alt=""
+class="object-fill -translate-x-[40%] md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-700/50 via-red-700/10 to-transparent absolute -top-24 -z-[9] visible"
+/>
+
+<img
+src="img/centurion_bg.webp"
+alt=""
+class="imagebg object-fill -translate-x-[40%] md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl absolute -top-24 -z-10 visible"
+/>
+</div>
+
+<div class="slide h-full w-full absolute top-0 left-0 group">
+    <div
+    class="text-6xl md:text-8xl relative flex-1 text-yellow-500 text-left"
+    >
+    <p class="md:hidden inline">
+        <br />
+    </p>
+    <div class="title inline md:block bg-black/50">/LEGION</div>
+    <div class="text-2xl bg-black/50 desc">
+        //A MORE COMPLEX PIECE, WITH HIGH DETAIL.
+    </div>
+</div>
+
+<div
+class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50"
+>
+//PRICE = $40
+</div>
+<div class="h-1/2"></div>
+
+<div
+class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20"
+>
+<div class="text-white stars inline">//★★★</div>
+<a
+href="commission.html"
+class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]"
+>[ORDER]</a
+>
+</div>
+
+<img
+src="img/legion.webp"
+alt=""
+class="-translate-x-[45%] md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image absolute -top-24 -z-10 visible"
+/>
+</div>
+
+<div class="slide h-full w-full absolute top-0 left-0 group">
+    <div
+    class="text-6xl md:text-8xl relative flex-1 text-red-600 text-left"
+    >
+    <p class="md:hidden inline">
+        <br />
+    </p>
+    <div class="title inline md:block bg-black/50">
+        /EXERCITUS
+    </div>
+    <div class="text-2xl bg-black/50 desc">
+        //A PIECE LIKE [LEGION] BUT WITH A COMPLEX BACKGROUND.
+    </div>
+</div>
+
+<div
+class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50"
+>
+//PRICE = $50
+</div>
+<div class="h-1/2"></div>
+<div
+class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20"
+>
+<div class="text-white stars starsSpecial inline">
+    //★★★★
+</div>
+<a
+href="commission.html"
+class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]"
+>[ORDER]</a
+>
+</div>
+<img
+src="img/exercitus.webp"
+alt=""
+class="object-fill -translate-x-1/4 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image group-hover:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-700 via-red-700/30 to-transparent absolute -top-24 -z-[9] visible"
+/>
+
+<img
+src="img/exercitus_bg.webp"
+alt=""
+class="imagebg object-fill -translate-x-1/4 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl absolute -top-24 -z-10 visible"
+/>
+</div>
+
+<div class="slide h-full w-full absolute top-0 left-0 group">
+    <div
+    class="text-6xl md:text-8xl relative flex-1 text-purple-500 text-left"
+    >
+    <p class="md:hidden inline">
+        <br />
+    </p>
+    <div class="title inline md:block bg-black/50">/ARMADA</div>
+    <div class="text-2xl bg-black/50 desc">
+        //TWEEN ANIMATION
+    </div>
+</div>
+
+<div
+class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50"
+>
+//CONTACT FOR PRICE
+</div>
+<div class="h-1/2"></div>
+<div
+class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20"
+>
+<div class="text-white stars starsSpecial inline">
+    //★★★★★
+</div>
+<a
+href="commission.html"
+class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]"
+>[ORDER]</a
+>
+</div>
+
+<img
+src="https://i.imgur.com/zRKgXlt.gif"
+alt=""
+class="object-fill -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image absolute -top-24 -z-[9] visible"
+height="1080px"
+width="1920px"
+/>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div
+class="bg-gradient-to-b from-black via-transparent to-black w-full"
+>
+<div
+class="flex flex-col sm:flex-row overflow-y-hidden md:w-4/6 mx-auto text-white text-center"
+>
+<div class="p-8 z-50">
+    <div class="flex flex-row sm:flex-col gap-y-4">
+        <div class="h-16 w-16 group">
+            <a href="https://twitter.com/smugpire" class="inline"
+            ><img src="img/twitter-logo-2429.svg" alt="" class="inline"
+            /></a>
+            <div
+            class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl"
+            >
+            @smugpire
         </div>
     </div>
+    
+    <div class="h-16 w-16 group">
+        <img
+        src="img/discord-icon-svgrepo-com.svg"
+        alt=""
+        class="inline"
+        />
+        <div
+        class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl"
+        >
+        smugpire
+    </div>
+</div>
+
+<div class="h-16 w-16 group">
+    <a
+    href="https://www.deviantart.com/snekscheesycanvas"
+    class="inline"
+    ><img src="img/DeviantArt_Logo2.svg" alt="" class="inline"
+    /></a>
+    <div
+    class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl"
+    >
+    SneksCheesyCanvas
+</div>
+</div>
+
+<div class="h-16 w-16 group">
+    <a href="https://cara.app/smugpire" class="inline"
+    ><img src="img/cara-logo.webp" alt="" class="inline"
+    /></a>
+    <div
+    class="absolute group-hover:inline hidden bg-red-600 p-4 text-white min-w-max text-2xl"
+    >
+    Smugpire
+</div>
+</div>
+</div>
+</div>
+
+<div class="px-8">
+    <div class="text-4xl lg:text-6xl">SMUGPIRE MAKES ART</div>
+    <div class="h-4"></div>
+    <div class="flex">
+        <div class="flex-auto"></div>
+        <div class="flex-none shadow-2xl rounded-full shadow-red-500">
+            <img
+            src="img/smugpire.webp"
+            alt=""
+            class="shadow-inner rounded-full max-w-xs w-64 md:w-32 xl:w-96 block"
+            />
+        </div>
+        
+        <div class="flex-auto"></div>
+    </div>
+    <div class="h-2"></div>
+    
+    <div class="text-xl text-gray-500">
+        Pictured: A smug bastardpire
+    </div>
+</div>
+
+<div class="text-left p-8 text-xl">
+    <br />
+    Name: Smugpire
+    <br />
+    Age: Not on the clock
+    <br />
+    Gender: Male
+    <br />
+    Location: Malaysia
+    <br />
+    <br />
+    I am Smugpire. I love designing for fantastical settings! Each
+    character has a story to tell with their design, and I love
+    crafting both those stories and the characters themselves. I am
+    unfortunately a vampire addict.
+    <br />
+</div>
+
+<div class="h-4"></div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
 
@@ -272,79 +409,67 @@
     WelcomeAnim();
     Carousel();
     
-    function WelcomeAnim(){
+    function WelcomeAnim() {
         tl = new TimelineMax({});
         tl.from("#welcomeText", {
             duration: 1.5,
             text: "____________",
-        }
-        );
-        tl.to("#welcomeParent",{
+        });
+        tl.to("#welcomeParent", {
             duration: 0.5,
             opacity: 0,
             display: "none",
-        })
-        
-        
+        });
     }
     
-    function Carousel(){ 
-        const carousel = document.querySelector('#carousel');
-        const slides = Array.from(carousel.querySelectorAll('.slide'));
+    function Carousel() {
+        const carousel = document.querySelector("#carousel");
+        const slides = Array.from(carousel.querySelectorAll(".slide"));
         let currentIndex = 0;
         
-        tl = new TimelineMax({delay:1.5,});
+        tl = new TimelineMax({ delay: 1.5 });
         
-        tl.from(".image", 
-        {
-            x:2000,
+        tl.from(".image", {
+            x: 2000,
             ease: "power2.inOut",
             duration: 0.75,
-            
-        }
-        );
+        });
         
-        tl.from(".imagebg",
-        {
-            opacity:0,
+        tl.from(".imagebg", {
+            opacity: 0,
             ease: "power4.out",
             duration: 1,
-        })
+        });
         
         tl.from(".stars", {
             duration: 1.25,
-            text:  "#ERROR",
+            text: "#ERROR",
             delay: -1,
-        }
-        );
+        });
         
         tl.from(".title", {
             duration: 1,
-            text:  "#ERROR",
-            delay: -1,
-        }
-        );
-        
-        tl.from(".price", 
-        {
             text: "#ERROR",
-            duration: 0.75,
-            delay:-1,
+            delay: -1,
         });
         
-        tl.from(".desc", 
-        {
+        tl.from(".price", {
+            text: "#ERROR",
+            duration: 0.75,
+            delay: -1,
+        });
+        
+        tl.from(".desc", {
             text: "#ERROR",
             duration: 1,
-            delay:-1,
-        }
-        );
+            delay: -1,
+        });
         
         function showSlide(index) {
-            slides.forEach(slide => {
-                slide.style.display = 'none';
+            slides.forEach((slide) => {
+                slide.style.display = "none";
             });
-            slides[index].style.display = 'block';
+            slides[index].style.display = "block";
         }
         
         function prevSlide() {
@@ -359,16 +484,16 @@
             tl.play(0);
         }
         
-        function sameSlide(){
-            
+        function sameSlide() {
             tl.play(0);
         }
         
         showSlide(currentIndex);
         
-        document.querySelector('#prev').addEventListener('click', prevSlide);
-        document.querySelector('#next').addEventListener('click', nextSlide);
-        document.querySelector('#welcomeParent').addEventListener('click', sameSlide);
-        
+        document.querySelector("#prev").addEventListener("click", prevSlide);
+        document.querySelector("#next").addEventListener("click", nextSlide);
+        document
+        .querySelector("#welcomeParent")
+        .addEventListener("click", sameSlide);
     }
 </script>
