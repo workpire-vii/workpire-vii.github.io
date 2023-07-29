@@ -30,80 +30,72 @@
         [!] NOT SUITABLE FOR MOBILE VIEW
     </div>
     
-    <div
-    class="overflow-y-hidden overflow-x-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-black"
-    >
-    <div
-    class="fixed w-screen h-screen z-[99] flex flex-col bg-black"
-    id="welcomeParent"
-    >
-    <div class="relative h-1/4 flex-1"></div>
-    <div
-    class="relative flex-1 pt-32 w-screen h-1/2 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900 via-red-950/80 to-transparent text-center text-5xl md:text-7xl text-white align-middle inline"
-    >
-    [WELCOME,
-    <div class="inline" id="welcomeText">COMMISSIONER</div>
-    ]
-</div>
-
-<div class="relative h-1/4 flex-1"></div>
-</div>
-
-<div class="mx-auto bg-black/50 w-full text-white text-center">
-    <div class="">
-        <div class="w-full h-full relative z-[90]" id="parent">
+    <div class="overflow-y-hidden overflow-x-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-black" >
+        <div class="fixed w-screen h-screen z-[99] flex flex-col bg-black" id="welcomeParent" >
+            <div class="relative h-1/4 flex-1"></div>
+            <div class="relative flex-1 pt-32 w-screen h-1/2 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900 via-red-950/80 to-transparent text-center text-5xl md:text-7xl text-white align-middle inline">
+                [WELCOME, <div class="inline" id="welcomeText">COMMISSIONER</div>]
+                <div class="text-3xl">SCROLL DOWN FOR MORE</div>
+            </div>
+            
+            <div class="relative h-1/4 flex-1"></div>
+        </div>
+        
+        <div class="mx-auto bg-black/50 w-full text-white text-center">
             <div class="">
-                <div
-                class="relative overflow-hidden h-screen mx-auto"
-                id="carousel"
-                >
+                <div class="w-full h-full relative z-[90]" id="parent">
+                    <div class="">
+                        <div
+                        class="relative overflow-hidden h-screen mx-auto"
+                        id="carousel"
+                        >
+                        <button
+                        class="absolute left-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-r from-red-700/50 to-transparent h-screen flex flex-col w-1/6"
+                        id="prev"
+                        >
+                        <div class="h-1/2"></div>
+                        <div
+                        class="pointer-events-auto text-7xl md:text-9xl text-red-600 text-left bg-red-900/40"
+                        >
+                        <[
+                    </div>
+                    <div class="h-1/2"></div>
+                </button>
+                
                 <button
-                class="absolute left-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-r from-red-700/50 to-transparent h-screen flex flex-col w-1/6"
-                id="prev"
+                class="absolute right-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-l from-red-700/50 to-transparent h-screen flex flex-col w-1/6"
+                id="next"
                 >
                 <div class="h-1/2"></div>
                 <div
-                class="pointer-events-auto text-7xl md:text-9xl text-red-600 text-left bg-red-900/40"
+                class="pointer-events-auto text-7xl md:text-9xl text-red-600 text-right bg-red-900/40"
                 >
-                <[
+                ]>
             </div>
             <div class="h-1/2"></div>
         </button>
         
-        <button
-        class="absolute right-0 top-0 z-[92] pointer-events-none group hover:bg-gradient-to-l from-red-700/50 to-transparent h-screen flex flex-col w-1/6"
-        id="next"
-        >
-        <div class="h-1/2"></div>
         <div
-        class="pointer-events-auto text-7xl md:text-9xl text-red-600 text-right bg-red-900/40"
+        class="object-scale-down slide h-full w-full absolute top-0 left-0 group"
+        id="churro"
         >
-        ]>
+        <div
+        class="text-6xl md:text-8xl relative flex-1 text-green-300 text-left"
+        >
+        <p class="md:hidden inline">
+            <br />
+        </p>
+        <div class="title inline md:block bg-black/50">
+            /DECARION
+        </div>
+        <div class="text-2xl bg-black/50 desc">
+            //THE SIMPLEST ART LEVEL. A ROUGH FULL COLOR WITH SHADING.
+        </div>
     </div>
-    <div class="h-1/2"></div>
-</button>
-
-<div
-class="object-scale-down slide h-full w-full absolute top-0 left-0 group"
-id="churro"
->
-<div
-class="text-6xl md:text-8xl relative flex-1 text-green-300 text-left"
->
-<p class="md:hidden inline">
-    <br />
-</p>
-<div class="title inline md:block bg-black/50">
-    /DECARION
-</div>
-<div class="text-2xl bg-black/50 desc">
-    //THE SIMPLEST ART LEVEL. A ROUGH FULL COLOR WITH SHADING.
-</div>
-</div>
-<div
-class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50"
->
-//PRICE = $10
+    <div
+    class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50"
+    >
+    //PRICE = $10
 </div>
 <div class="h-1/2"></div>
 
@@ -267,36 +259,28 @@ class="imagebg object-fill -translate-x-1/4 md:translate-x-0 min-h-screen min-w-
     </div>
 </div>
 
-<div
-class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50"
->
-//CONTACT FOR PRICE
+<div class="pl-8 text-4xl text-white price w-[22rem] text-left bg-black/50">
+    //CONTACT FOR PRICE
 </div>
 <div class="h-1/2"></div>
-<div
-class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20"
->
-<div class="text-white stars starsSpecial inline">
-    //★★★★★
-</div>
-<a
-href="commission.html"
-class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]"
->[ORDER]</a
->
+<div class="bg-black/50 text-7xl md:text-9xl text-left left-0 z-20">
+    <div class="text-white stars starsSpecial inline">
+        //★★★★★
+    </div>
+    <a href="commission.html"
+    class="text-red-600 bg-red-900/60 hover:bg-red-900/90 float-right z-[100]">[ORDER]</a>
 </div>
 
-<img
-src="https://i.imgur.com/zRKgXlt.gif"
-alt=""
-class="object-fill -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image absolute -top-24 -z-[9] visible"
-height="1080px"
-width="1920px"
-/>
+<img src="https://i.imgur.com/zRKgXlt.gif" alt="" class="object-fill -translate-x-1/2 md:translate-x-0 min-h-screen min-w-max md:min-w-0 md:max-w-screen-2xl image absolute -top-24 -z-[9] visible" height="1080px" width="1920px" />
+
 </div>
+
 </div>
+
 </div>
+
 </div>
+
 </div>
 
 <div
@@ -353,7 +337,11 @@ class="flex flex-col sm:flex-row overflow-y-hidden md:w-4/6 mx-auto text-white t
     >
     Smugpire
 </div>
+
+
+
 </div>
+<div class=""><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a bloodbag', '#e02828', 'N4N5M3LZ1');kofiwidget2.draw();</script> </div>
 </div>
 </div>
 
